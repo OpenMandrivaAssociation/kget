@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Versatile and user-friendly download manager for KDE4
 Name:		kget
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -70,7 +70,6 @@ BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %patchlist
-kget-25.04.3-gpgme-2.0.patch
 
 %description
 KGet is a versatile and user-friendly download manager.
